@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api',
+  // Hardcoded for production Vercel deployment
+  baseURL: 'https://candidate-shortlisting-ai.onrender.com/api',
 });
 
 export default api;
